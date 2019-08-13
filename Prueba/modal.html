@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="odontograma.js"></script>
+    <link rel="stylesheet" href="modal.css">
+
+
+
+  </head>
+<body>
+<img src="diente-icono.png" title="esto es un oculista" name="check" id="check" onclick="javascript:showContent()">
+
+
+<div id="content" style="display: none;">
+    contenido del div escondido<br/>
+    contenido del div escondido<br/>
+    contenido del div escondido<br/>
+</div>
+
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+        <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p>Some text. Some text. Some text.</p>
+            <p>Some text. Some text. Some text.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

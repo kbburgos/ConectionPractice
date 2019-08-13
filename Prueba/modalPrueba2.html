@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <style>
+        .imagenes {float:left;width:120px;}
+        .imagenes img {border:1px solid;display:block;border:1px solid;height:100px;width:100px;}
+        .resultado {float:left;}
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $(".imagenes img").click(function(){
+                $("#texto").html($(this).attr("title"));
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="imagenes">
+    <div><img src="diente-icono.png" title="esto es un oculista"></div>
+    <div><img src="diente-icono.png" title="esto es una vaca"></div>
+    <div><img src="diente-icono.png" title="esto es un tractor"></div>
+</div>
+<div class="resultado">
+    <div id="texto"></div>
+</div>
+</body>
+</html>
